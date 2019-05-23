@@ -28,7 +28,7 @@ import java.util.List;
  * //               |swap(0,0)
  * //               |
  * //             a|b|c(状态B)
- * //             /  \
+ * //             /  \www
  * //   swap(1,1)/    \swap(1,2)  (状态C1和状态C2)
  * //           /      \
  * //         a|b|c   a|c|b
