@@ -18,7 +18,19 @@ int [] a=new int[]{4,5,1,6,2,7,3,8};
     }
     public static ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
 
-        int count = getCount(input, 0, input.length - 1, k);
+        int start=0;
+        int end=input.length-1;
+        int index=partition(input,start,end);
+        while (index!=k-1)
+        {
+            if(index<k-1)
+            {
+                index=partition(input,index+1,end);
+            }else
+            {
+                index=partition(input,start,index-1);
+            }
+        }
         ArrayList<Integer> list=new ArrayList();
         for(int i=0;i<k;i++)
         {
@@ -30,44 +42,63 @@ int [] a=new int[]{4,5,1,6,2,7,3,8};
 
     public static int getCount(int [] array,int start,int end,int k)
     {
-        int partion = partion(array, start, end);
-        if(k<partion)
+        int partion = partition(array, start, end);
+        if(k-1<partion)
         {
             return getCount(array,start,partion-1,k);
-        }else if(k>partion)
+        }else if(k+1>partion)
         {
             return getCount(array,partion+1,end,k);
         }
         return partion;
     }
-    public static int partion(int [] array,int start,int end)
+//    public static int partition(int [] array,int start,int end)
+//
+//    {
+//        int index=array[start];
+//        while (start<end)
+//        {
+//            while (start<end&&array[end]>=index)
+//            {
+//                end--;
+//            }
+//            if(array[end]<index)
+//            {
+//                int tmq=array[start];
+//                array[start]=array[end];
+//                array[end]=tmq;
+//            }
+//            while (start<end&&array[start]<=index)
+//            {
+//                start++;
+//            }
+//            if(array[start]>index)
+//            {
+//                int tmq=array[end];
+//                array[end]=array[start];
+//                array[start]=tmq;
+//            }
+//
+//        }
+//        return end;
+//    }
 
-    {
-        int index=array[start];
-        while (start<end)
-        {
-            while (start<end&&array[end]>=index)
-            {
+    private static int partition(int[] arr, int start,int end){
+        int pivotKey=arr[start];
+        while(start<end){
+            while(start<end && arr[end]>=pivotKey)
                 end--;
-            }
-            if(array[end]<index)
-            {
-                int tmq=array[start];
-                array[start]=array[end];
-                array[end]=tmq;
-            }
-            while (start<end&&array[start]<=index)
-            {
+            swap(arr,start,end);
+            while(start<end && arr[start]<=pivotKey)
                 start++;
-            }
-            if(array[start]>index)
-            {
-                int tmq=array[end];
-                array[end]=array[start];
-                array[start]=tmq;
-            }
-
+            swap(arr,start,end);
         }
-        return end;
+        return start;
+    }
+
+    private static void swap(int[] arr, int i,int j){
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
     }
 }
