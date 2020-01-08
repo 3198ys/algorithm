@@ -1,25 +1,26 @@
 package offer;
 
-import java.util.ArrayList;
-
+/**
+ * @author: create by ys
+ * @version: v1.0
+ * @description: offer
+ * @date:2020-01-06
+ */
 public class day02 {
 
-    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+  public String replaceSpace(StringBuffer str) {
 
-        ArrayList<Integer> list=new ArrayList<>();
-        if(listNode==null){
-         return list;
-        }
-        digui(list,listNode);
-        return list;
+    StringBuffer sb=new StringBuffer();
+    for(int i=0;i<str.length();i++){
+      if(str.charAt(i)==' '){
+
+        sb.append("%20");
+      }else{
+        sb.append(str.charAt(i));
+      }
     }
+    return sb.toString();
+  }
 
-    public void digui(ArrayList<Integer> list,ListNode listNode){
-        if(listNode==null){
-            return;
-        }
-        digui(list,listNode.next);
-        list.add(listNode.val);
 
-    }
 }
