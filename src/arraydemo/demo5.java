@@ -63,6 +63,38 @@ public class demo5 {
 
     }
 
+    //堆排序
+    public static void heapSort(int [] array){
+        for(int i=array.length/2-1;i>=0;i--){
+            createHeap(array,i,array.length-1);
+        }
+
+        for(int i=array.length-1;i>0;i--){
+            int temp=array[i];
+            array[i]=array[0];
+            array[0]=temp;
+            createHeap(array,0,i);
+        }
+    }
+
+
+    public static void downAdjust(int [] array,int parentIndex,int length){
+        int temp=array[parentIndex];
+        int child=parentIndex*2+1;
+        while (child<=length){
+            if (child + 1 <= length && array[child + 1] > array[child]) {
+                child++;
+            }
+            if(temp>=array[child]){
+                break;
+            }
+            array[parentIndex]=array[child];
+            parentIndex=child;
+            child=child*2+1;
+        }
+        array[parentIndex]=temp;
+    }
+
 
 //    public void adjustMaxHeapSort(int[] input, int pos, int length){
 //        int temp;
