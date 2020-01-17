@@ -49,9 +49,10 @@ public class LRUCache1 {
     if(!map.containsKey(key)){
       return -1;
     }
-    Object o = list.get(key);
-    put(key,val);
-    return val;
+    Integer integer = map.get(key);
+    list.remove(key);
+    list.addFirst(key);
+    return integer;
   }
 
   /**
@@ -61,16 +62,18 @@ public class LRUCache1 {
    */
   public void put(int key, int value) {
 
-    Node x=new Node(key,value);
     if(map.containsKey(key)){
-      list.remove(x);
-      list.addFirst(x);
+      list.remove(key);
+      list.addFirst(key);
+      map.put(key,value);
     }else{
-      if(cap==list.size()){
-        list.removeList();
+      if(list.size()==cap){
+        Integer o = (Integer)list.removeLast();
+        map.remove(o);
       }
-      list.addFirst(x);
-      map.put(key,x);
+      list.addFirst(key);
+      map.put(key,value);
     }
+
   }
 }
