@@ -1,5 +1,8 @@
 package offer;
 
+/**
+ * 快排
+ */
 public class day03 {
     private static int partion(int [] arr,int startIndex,int endIndex){
         int pivot=arr[startIndex];
