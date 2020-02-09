@@ -9,8 +9,9 @@ import java.util.ArrayList;
 public class demo5 {
 
     public static void main(String[] args) {
-        int [] a=new int[]{4,5,1,6,2,7,3,8};
+        int [] a=new int[]{4,5,1,6,2,7,3,8,0};
         ArrayList<Integer> integers = GetLeastNumbers_Solution(a, 4);
+//        heapSort(a);
         for(int aa:integers)
         {
             System.out.println(aa);
@@ -49,7 +50,7 @@ public class demo5 {
         for (temp = input[pos]; 2 * pos + 1 <= length; pos = child) {
 
             child = 2 * pos;
-            if (child + 1 <= length && input[child] < input[child + 1]) {
+            if (child + 1 <=length && input[child] < input[child + 1]) {
                 child++;
             }
             if (input[child] > temp) {
@@ -65,7 +66,7 @@ public class demo5 {
 
     //堆排序
     public static void heapSort(int [] array){
-        for(int i=array.length/2-1;i>=0;i--){
+        for(int i=array.length/2;i>=0;i--){
             createHeap(array,i,array.length-1);
         }
 
