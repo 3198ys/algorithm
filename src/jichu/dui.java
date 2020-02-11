@@ -65,7 +65,7 @@ public class dui {
   {
 
     for(int i=arr.length/2;i>=0;i--){
-      creatHead(arr,i,arr.length-1);
+      creatHead(arr,i,arr.length- 1);
     }
     for(int i=arr.length-1;i>=0;i--){
       int tmq=arr[0];
