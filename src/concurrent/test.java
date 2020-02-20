@@ -23,4 +23,21 @@ public class test {
 
     Executors.newFixedThreadPool(1);
   }
+
+
+  public void cc(){
+    new aa().say();
+    new bb().say1();
+  }
+  private static class aa{
+    public void say(){
+      System.out.println("aaa");
+    }
+  }
+
+  private class bb{
+    private void say1(){
+      System.out.println("aaaaa");
+    }
+  }
 }

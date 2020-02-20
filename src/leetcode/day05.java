@@ -101,4 +101,38 @@ public class day05 {
     }
     return list;
   }
+
+  //这个不行 回溯法
+  public List<List<Integer>> threeSumV3(int[] nums) {
+    List<List<Integer>> list=new ArrayList<>();
+    List<Integer> tmqList=new ArrayList<>();
+    huisu(list,nums,tmqList,0,0);
+    return list;
+  }
+
+  public void huisu(List<List<Integer>> list,int [] nums,List<Integer> tmqList,int target,int start){
+    if(sum(tmqList) == 0 && tmqList.size()==3){
+      list.add(new ArrayList<>(tmqList));
+      return;
+    }
+    if(tmqList.size()>3){
+      return ;
+    }
+    for(int i=start;i<nums.length;i++){
+      tmqList.add(nums[i]);
+      huisu(list, nums, tmqList, target+nums[i], i+1);
+      tmqList.remove(tmqList.size()-1);
+    }
+  }
+
+  private int sum(List<Integer> list){
+    if(list.size()>0 && list!=null){
+      int sum=0;
+      for(Integer a:list){
+        sum+=a;
+      }
+      return sum;
+    }
+    return -1;
+  }
 }
