@@ -15,16 +15,26 @@ import sun.misc.Unsafe;
 public class test {
 
   public static void main(String[] args) {
-    List<Integer> list=new ArrayList<>();
-    list.add(1);
-    list.add(1);
-    list.add(1);
-    System.out.println(list.toString());
 
-    Executors.newFixedThreadPool(1);
+    System.out.println(hell());
   }
 
 
+  public static int hell(){
+    int a=0;
+    try{
+
+      a++;
+      return a;
+    }catch (Exception e){
+      e.printStackTrace();
+    }finally {
+
+      ++a;
+      return a;
+    }
+
+  }
   public void cc(){
     new aa().say();
     new bb().say1();
