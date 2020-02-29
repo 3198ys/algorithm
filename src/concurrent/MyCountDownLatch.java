@@ -1,5 +1,8 @@
 package concurrent;
 
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+
 /**
  * @author: create by ys
  * @version: v1.0
@@ -14,6 +17,7 @@ public class MyCountDownLatch {
     this.count = count;
   }
 
+//  ReentrantReadWriteLock
   public void countdown() throws InterruptedException{
     if(Thread.interrupted()){
       throw new InterruptedException();
