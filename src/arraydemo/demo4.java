@@ -7,7 +7,7 @@ public class demo4 {
 
     public static void main(String[] args) {
         int [] a=new int[]{4,5,1,6,2,7,3,8};
-        ArrayList<Integer> integers = GetLeastNumbers_Solution1(a, 3);
+        ArrayList<Integer> integers = GetLeastNumbers_Solution1(a, 4);
         for(int aa:integers)
         {
             System.out.println(aa);
