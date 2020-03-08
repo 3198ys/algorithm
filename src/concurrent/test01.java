@@ -11,6 +11,12 @@ public class test01 {
   public static void main(String[] args) {
     int EXCLUSIVE_MASK = (1 << 16) - 1;
 
+    String a="aa";
+    String intern = a.intern();
+    String b=new String("aa");
+    System.out.println(intern==b);
+    System.out.println(a==b);
+    System.out.println(intern==a);
     System.out.println(Integer.toBinaryString(1));
     System.out.println(Integer.toBinaryString(EXCLUSIVE_MASK));
   }
