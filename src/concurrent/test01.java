@@ -1,5 +1,9 @@
 package concurrent;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * @author: create by ys
  * @version: v1.0
@@ -8,17 +12,15 @@ package concurrent;
  */
 public class test01 {
 
-  public static void main(String[] args) {
-    int EXCLUSIVE_MASK = (1 << 16) - 1;
+  public static void main(String[] args) throws ParseException {
+    String date="2019-01-22 07:00:00";
+    String[] s = date.split(" ");
+    StringBuffer sb=new StringBuffer();
+    String[] split = s[0].split("-");
+    String[] split1 = s[1].split(":");
+    sb.append(split[0]).append("年").append(split[1]).append("月").append(split[2]).append("日").append(" ").append(split1[0]).append(":").append(split1[1]);
 
-    String a="aa";
-    String intern = a.intern();
-    String b=new String("aa");
-    System.out.println(intern==b);
-    System.out.println(a==b);
-    System.out.println(intern==a);
-    System.out.println(Integer.toBinaryString(1));
-    System.out.println(Integer.toBinaryString(EXCLUSIVE_MASK));
+    System.out.println(sb.toString());
   }
 
 }
