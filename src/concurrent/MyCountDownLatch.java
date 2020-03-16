@@ -17,7 +17,6 @@ public class MyCountDownLatch {
     this.count = count;
   }
 
-//  ReentrantReadWriteLock
   public void countdown() throws InterruptedException{
     if(Thread.interrupted()){
       throw new InterruptedException();
