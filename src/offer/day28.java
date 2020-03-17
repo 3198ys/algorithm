@@ -1,7 +1,10 @@
 package offer;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
+import java.util.PriorityQueue;
 
 /**
  * @author: create by ys
@@ -15,9 +18,34 @@ public class day28 {
 
   public static void main(String[] args) {
     int []a=new int[]{4,5,1,6,2,7,3,8};
-    ArrayList<Integer> integers = (ArrayList<Integer>) GetLeastNumbers_SolutionV2(a, 4);
+    ArrayList<Integer> integers = (ArrayList<Integer>) testPriorityQueue(a, 4);
     System.out.println(integers.toString());
 
+  }
+
+  public static ArrayList<Integer> testPriorityQueue(int [] input, int k){
+    PriorityQueue<Integer> queue=new PriorityQueue<>(k, new Comparator<Integer>() {
+      @Override
+      public int compare(Integer o1, Integer o2) {
+        return o2-o1;
+      }
+    });
+    for(int i=0;i<input.length;i++){
+      if(i<k){
+        queue.add(input[i]);
+      }else{
+        if(queue.peek()>=input[i]){
+          queue.poll();
+          queue.add(input[i]);
+        }
+      }
+    }
+    ArrayList<Integer> list=new ArrayList<>();
+    Iterator<Integer> iterator = queue.iterator();
+    while (iterator.hasNext()){
+      list.add(iterator.next());
+    }
+    return list;
   }
   public  ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
 
