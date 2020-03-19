@@ -4,6 +4,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @author: create by ys
@@ -18,6 +20,10 @@ public class test01 {
     String s1 = user.replaceAll("(\\d{4})\\d{3}(\\d{4})", "$1****$2");
     System.out.printf(s1);
 
+    ExecutorService executorService = Executors.newFixedThreadPool(1);
+    executorService.execute(()->{
+      System.out.println("aa");
+    });
     String date="2019-01-22 07:00:00";
     String[] s = date.split(" ");
     StringBuffer sb=new StringBuffer();
