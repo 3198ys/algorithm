@@ -20,29 +20,29 @@ public class day24 {
       return list;
     }
     ArrayList<Integer> tmqList=new ArrayList<>();
-    digui(list,tmqList,root,target);
+//    digui(list,tmqList,root,target);
     return list;
   }
 
-  public void digui(ArrayList<ArrayList<Integer>> list,List<Integer> tmqList,TreeNode root,int target) {
-    if (target < 0) {
-      return;
-    }
-    if (target == 0 && root.left == null && root.right == null) {
-      list.add(new ArrayList<>(tmqList));
-      return;
-    }
-    if (root != null) {
-
-      tmqList.add(root.val);
-
-      digui(list, tmqList, root.left, target - root.val);
-      digui(list, tmqList, root.right, target - root.val);
-
-      tmqList.remove(tmqList.size() - 1);
-    }
-  }
-    public void digui(ArrayList<ArrayList<Integer>> list,List<Integer> tmqList,TreeNode root,int target,int sum){
+//  public void digui(ArrayList<ArrayList<Integer>> list,List<Integer> tmqList,TreeNode root,int target) {
+//    if (target < 0) {
+//      return;
+//    }
+//    if (target == 0 && root.left == null && root.right == null) {
+//      list.add(new ArrayList<>(tmqList));
+//      return;
+//    }
+//    if (root != null) {
+//
+//      tmqList.add(root.val);
+//
+//      digui(list, tmqList, root.left, target - root.val);
+//      digui(list, tmqList, root.right, target - root.val);
+//
+//      tmqList.remove(tmqList.size() - 1);
+//    }
+//  }
+    public static void digui(ArrayList<ArrayList<Integer>> list,List<Integer> tmqList,TreeNode root,int target,int sum){
 
       if(sum==target&& root.left==null&& root.right==null){
         list.add(new ArrayList<>(tmqList));
