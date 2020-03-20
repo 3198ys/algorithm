@@ -1,9 +1,6 @@
 package offer;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author: create by ys
@@ -12,35 +9,91 @@ import java.util.List;
  * @date:2020/3/19
  */
 public class day34 {
+//  public int TreeDepth(TreeNode root) {
+//    if(root==null){
+//      return 0;
+//    }
+//    ArrayList<Integer> list=new ArrayList<>();
+//    ArrayList<Integer> tmqList=new ArrayList<>();
+//    digui(list,tmqList,root);
+//    Collections.sort(list, new Comparator<Integer>() {
+//      @Override
+//      public int compare(Integer o1, Integer o2) {
+//        return o2-o1;
+//      }
+//    });
+//    System.out.println(list.toString());
+//    return list.get(0);
+//  }
+//
+//  public void digui(ArrayList<Integer> list, ArrayList<Integer> tmqList,TreeNode root){
+//    if(root.left==null && root.right==null){
+//      list.add(tmqList.size()-1);
+//      return;
+//    }
+//    tmqList.add(root.val);
+//    if(root.left!=null){
+//      digui(list,tmqList,root.left);
+//    }
+//    if(root.right!=null){
+//      digui(list, tmqList, root.right);
+//    }
+//    tmqList.remove(tmqList.size()-1);
+//  }
+
+  /**
+   * 层序遍历来做
+   * @param root
+   * @return
+   */
   public int TreeDepth(TreeNode root) {
+
     if(root==null){
       return 0;
     }
-    ArrayList<Integer> list=new ArrayList<>();
-    ArrayList<Integer> tmqList=new ArrayList<>();
-    digui(list,tmqList,root);
-    Collections.sort(list, new Comparator<Integer>() {
-      @Override
-      public int compare(Integer o1, Integer o2) {
-        return o2-o1;
+    Queue<TreeNode> queue=new LinkedList<>();
+    queue.add(root);
+    int hight=0;
+    /**
+     * 这个代表了每层遍历的节点数
+     */
+    int count=0;
+    /**
+     * 代表了 下一层有的节点数 首先设为1就是  第一层就有一个节点
+     */
+    int nextCount=1;
+    while (queue.size()!=0){
+
+      queue.poll();
+      count++;
+      if(root.left!=null){
+        queue.add(root.left);
       }
-    });
-    System.out.println(list.toString());
-    return list.get(0);
+      if(root.right!=null){
+        queue.add(root.right);
+      }
+      if(count==nextCount){
+        /**
+         * 这个判断条件就是 这层 遍历 已经结束了count可以重新设为 0 深度可以加一了 nextCount也要重新 设置 现在 queue中的节点都是下一层的节点
+         *
+         *
+         *
+         */
+        nextCount=queue.size();
+        count=0;
+        hight++;
+      }
+    }
+    return hight;
   }
 
-  public void digui(ArrayList<Integer> list, ArrayList<Integer> tmqList,TreeNode root){
-    if(root.left==null && root.right==null){
-      list.add(tmqList.size()-1);
-      return;
+  public int TreeDepthV2(TreeNode root){
+
+    if(root==null){
+      return 0;
     }
-    tmqList.add(root.val);
-    if(root.left!=null){
-      digui(list,tmqList,root.left);
-    }
-    if(root.right!=null){
-      digui(list, tmqList, root.right);
-    }
-    tmqList.remove(tmqList.size()-1);
+    int left=TreeDepthV2(root.left);
+    int right=TreeDepthV2(root.right);
+    return Math.max(left,right)+1;
   }
 }
