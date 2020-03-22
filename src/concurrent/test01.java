@@ -21,6 +21,7 @@ public class test01 {
     System.out.printf(s1);
 
     ExecutorService executorService = Executors.newFixedThreadPool(1);
+    Executors.newCachedThreadPool();
     executorService.execute(()->{
       System.out.println("aa");
     });

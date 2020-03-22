@@ -6,6 +6,8 @@ import java.util.*;
  * @author: create by ys
  * @version: v1.0
  * @description: 输入一棵二叉树，求该树的深度。从根结点到叶结点依次经过的结点（含根、叶结点）形成树的一条路径，最长路径的长度为树的深度。
+ *
+ * 使用层次遍历 可以统计树的高度 一定记住  2 就是利用递归来做
  * @date:2020/3/19
  */
 public class day34 {
