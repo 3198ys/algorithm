@@ -3,6 +3,8 @@ package concurrent;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * @author: create by ys
@@ -17,6 +19,8 @@ public class Counter {
   public static void main(String[] args) throws InterruptedException {
 
     Counter counter = new Counter();
+
+
     List<Thread> list=new ArrayList<>();
     for(int i=0;i<100;i++){
       Thread thread = new Thread(() -> {
