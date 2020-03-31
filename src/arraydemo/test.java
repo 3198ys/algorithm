@@ -2,6 +2,7 @@ package arraydemo;
 
 import java.io.File;
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class test {
     public static void main(String[] args) {
@@ -18,6 +19,8 @@ public class test {
         readFiles1(file,list);
         int count=1;
         int day=1;
+
+        CopyOnWriteArrayList
 
         Map<Integer,List<String>> map1=new HashMap<>();
 

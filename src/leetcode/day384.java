@@ -20,7 +20,7 @@ package leetcode;
  * // 随机返回数组[1,2,3]打乱后的结果。
  * solution.shuffle();
  *
-
+这道题主要就是洗牌算法   如果不用洗牌算法的话 就是自己要有一个list 每次用随机数从这里面取出一个并且 将取出移除
  * @date:2020/3/31
  */
 public class day384 {
