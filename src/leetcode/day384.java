@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Random;
+
 /**
  * @author: create by ys
  * @version: v1.0
@@ -25,18 +27,42 @@ package leetcode;
  */
 public class day384 {
 
+  int [] array;
+  int [] oriange;
+
+  Random random=new Random();
   public day384(int[] nums) {
 
+    array=nums;
+    oriange=nums.clone();
   }
 
   /** Resets the array to its original configuration and return it. */
   public int[] reset() {
 
+    array=oriange;
+    oriange=oriange.clone();
+    return oriange;
   }
 
+
+  public void swap(int a,int b){
+    int tmq=array[a];
+    array[a]=array[b];
+    array[b]=tmq;
+  }
   /** Returns a random shuffling of the array. */
   public int[] shuffle() {
 
+    for(int i=0;i<array.length;i++){
+      swap(i,range(i,array.length));
+    }
+    return array;
+  }
+
+  public int range(int min,int max){
+    return random.nextInt(max-min)+min;
+    //这个获取的就是从min到 max之间的随机数
   }
 
   /**
