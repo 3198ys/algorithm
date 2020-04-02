@@ -20,7 +20,7 @@ public class test {
         int count=1;
         int day=1;
 
-        CopyOnWriteArrayList
+
 
         Map<Integer,List<String>> map1=new HashMap<>();
 

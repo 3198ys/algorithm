@@ -16,7 +16,13 @@ public class test {
 
   public static void main(String[] args) {
 
-    System.out.println(hell());
+
+    for(int i=0;i<3;i++){
+      if(i==2){
+        break;
+      }
+      System.out.println("aaa");
+    }
   }
 
 
