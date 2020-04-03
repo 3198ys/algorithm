@@ -1,6 +1,10 @@
 package concurrent;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -14,15 +18,14 @@ import sun.misc.Unsafe;
  */
 public class test {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws ParseException {
+    SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    String a="2020-04-05 00:00:00";
+    Date noe=sdf.parse(a);
 
-
-    for(int i=0;i<3;i++){
-      if(i==2){
-        break;
-      }
-      System.out.println("aaa");
-    }
+    Calendar instance = Calendar.getInstance();
+    instance.setTime(noe);
+    System.out.println();
   }
 
 
