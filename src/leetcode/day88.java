@@ -14,15 +14,50 @@ package leetcode;
  */
 public class day88 {
 
+    /**
+     * 第一种做法 复制一个新的数组出来
+     * @param nums1
+     * @param m
+     * @param nums2
+     * @param n
+     */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-
-
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(j<m && nums2[i]<=nums1[j]){
-                    nums1[j+1]=nums1[j];
-                }
-            }
+        int [] nums_copy=new int[m];
+        System.arraycopy(nums1,0,nums_copy,0,m);
+        int p1=0;int p2=0;int p=0;
+        while (p1<m && p2<n){
+            nums1[p++]=nums_copy[p1]<nums2[p2]?nums_copy[p1++]:nums2[p2++];
         }
+        if(p1<m){
+            System.arraycopy(nums_copy,p1,nums1,p1+p2,m+n-p1-p2);
+        }
+        if(p2<m){
+            System.arraycopy(nums2,p2,nums1,p1+p2,m+n-p1-p2);
+        }
+
+
+
     }
+
+    /**
+     * 使用 不需要 复制数组直接 从后往前复制就可以了
+     * @param nums1
+     * @param m
+     * @param nums2
+     * @param n
+     */
+    public void mergeV2(int[] nums1, int m, int[] nums2, int n){
+
+        int p1=m-1;
+        int p2=n-1;
+        int p=m+n-1;
+        while (p1>=0 && p2>=0){
+            nums1[p--]=nums1[p1]>nums2[p2]?nums1[p1--]:nums2[p2--];
+        }
+        /**
+         * 这里 肯定是  如果 nums2有剩余的话 那肯定就是都比nums1中的大,吧nums2 都复制到nums1 的前面去
+         */
+        System.arraycopy(nums2,0,nums1,0,p2+1);
+    }
+
 }
