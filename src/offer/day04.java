@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * @author: create by ys
  * @version: v1.0
- * @description: offer
+ * @description: 输入一个链表，按链表从尾到头的顺序返回一个ArrayList。
  * @date:2020-01-07
  */
 public class day04 {
