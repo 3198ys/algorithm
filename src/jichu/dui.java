@@ -8,7 +8,7 @@ import java.util.List;
  * @version: v1.0
  * @description: 堆包括构建堆，堆排序，使用的题主要就是  一大批数字找到最小的 n个数字  构建大顶堆，找最大的 几个数字 构建 小顶堆，，，堆排序，如果从大到小 构建 小顶堆，从小到大 构建大顶堆
  *
- * 注意注意注意 这里面 堆排序 和找最小的n个数有一点区别  在构建节点下沉的方法中 排序 child<length child+1<length  而最小的 n个数  child<=length child+1<=length
+ * 注意注意注意 这里面 堆排序 和找最小的n个数有一点区别
  * @date:2020/2/9
  */
 public class dui {
@@ -28,8 +28,8 @@ public class dui {
   public static void creatHead(int [] arr,int pos,int lenth){
     int temp=arr[pos];
     int child=2*pos+1;
-    while (child<lenth){
-      if(child+1<lenth && arr[child+1]>arr[child]){
+    while (child<=lenth){
+      if(child+1<=lenth && arr[child+1]>arr[child]){
         child++;
       }
       if(temp>=arr[child]){
@@ -73,7 +73,7 @@ public class dui {
       int tmq=arr[0];
       arr[0]=arr[i];
       arr[i]=tmq;
-      creatHead(arr,0,i);
+      creatHead(arr,0,i-1);
     }
   }
 

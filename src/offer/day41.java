@@ -11,5 +11,6 @@ package offer;
 public class day41 {
   public int Sum_Solution(int n) {
 
+    return 0;
   }
 }
