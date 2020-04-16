@@ -8,6 +8,11 @@ package offer;
  */
 public class day40 {
 
+  public static void main(String[] args) {
+    String a="I am a student.";
+    String s = ReverseSentenceV3(a);
+    System.out.println(s);
+  }
   public String ReverseSentence(String str){
     if(str.trim().equals("") || str==null){
       return str;
@@ -50,6 +55,23 @@ public class day40 {
       if(i > 1){
         o.append(" ");
       }
+    }
+    return o.toString();
+  }
+
+  public static String ReverseSentenceV3(String str) {
+    if(str.trim().equals("")){
+      return str;
+    }
+    String[] a = str.split(" ");
+    StringBuffer o = new StringBuffer();
+    int i;
+    for (i = a.length-1; i >=0;i--){
+      o.append(a[i]);
+      if(i!=0){
+        o.append(" ");
+      }
+
     }
     return o.toString();
   }

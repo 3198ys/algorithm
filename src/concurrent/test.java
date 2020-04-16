@@ -7,7 +7,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Executors;
+import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 import sun.misc.Unsafe;
 
 /**
@@ -26,6 +28,12 @@ public class test {
     Calendar instance = Calendar.getInstance();
     instance.setTime(noe);
     System.out.println();
+    new ThreadPoolExecutor(0,0,60, TimeUnit.MINUTES,new LinkedBlockingDeque<>()){
+      @Override
+      protected void afterExecute(Runnable r, Throwable t) {
+        System.out.println("aaa");
+      }
+    };
   }
 
 
