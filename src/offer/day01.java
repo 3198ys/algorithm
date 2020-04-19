@@ -10,8 +10,12 @@ public class day01 {
 
 
   public  boolean Find(int target, int [][] array) {
+
+    if(array==null || array.length==0 || array[0].length==0){
+      return false;
+    }
     int index=array[0].length-1;
-    for(int i=0;i<array[0].length;i++){
+    for(int i=0;i<array.length;i++){
       if(target<=array[i][index] && target>=array[i][0]){
         for(int j=0;j<=index;j++){
           if(target==array[i][j]){

@@ -5,7 +5,9 @@ import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class test {
+    final int a=1;
     public static void main(String[] args) {
+
         ArrayList<String> list=new ArrayList<>();
         Map<Integer,String> map=new HashMap<>();
         File file = new File("D:\\danci");
@@ -101,5 +103,8 @@ public class test {
         }
     }
 
+    public void aaa(){
+
+    }
 
 }

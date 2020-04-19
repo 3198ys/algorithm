@@ -73,6 +73,7 @@ public class LRUCache1 {
       }
       list.addFirst(key);
       map.put(key,value);
+      cap++;
     }
 
   }
