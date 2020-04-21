@@ -52,7 +52,7 @@ public class day148 {
             return node;
         }
         ListNode slow=node;
-        ListNode first=node.next;
+        ListNode first=node;
         while (first!=null && first.next!=null){
             slow=slow.next;
             first=first.next.next;

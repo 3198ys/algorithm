@@ -28,7 +28,7 @@ public class day16 {
       pre=head;
       head=next;
     }
-    return next;
+    return pre;
   }
 
 }
