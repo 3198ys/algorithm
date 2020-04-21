@@ -31,4 +31,5 @@ public class day16 {
     return pre;
   }
 
+
 }
