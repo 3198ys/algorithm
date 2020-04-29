@@ -49,7 +49,7 @@ public class day876 {
     public ListNode middleNodeV2(ListNode head) {
 
         ListNode node=head;
-        ListNode tmq=head;
+        ListNode tmq=head.next;
         while (tmq!=null && tmq.next!=null){
             node=node.next;
             tmq=tmq.next.next;
