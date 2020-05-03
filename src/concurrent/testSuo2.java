@@ -12,7 +12,7 @@ public class testSuo2 {
 
   public static void main(String[] args) {
     testsuo t1 = new testsuo();
-    Integer.parseInt()
+//    Integer.parseInt();
     Thread thread = new Thread(new consumer22(t1));
     Thread thread1 = new Thread(() -> {
       testsuo.say2();

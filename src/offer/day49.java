@@ -3,7 +3,7 @@ package offer;
 /**
  * @author: create by ys
  * @version: v1.0
- * @description: offer
+ * @description: 一个数组变成奇数偶数相间隔
  * @date:2020/4/26
  */
 public class day49 {
