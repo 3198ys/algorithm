@@ -45,11 +45,13 @@ public class day500 {
       if((strStart!=str.length && str[strStart]==pattern[patternStart]) || (strStart!=str.length && pattern[patternStart]=='.')){
         /**
          * 分为三种情况  * 代表 0 1 多个 代表0 的时候   bbbba  pattern .*a*a 这个时候  第二个*就要代表0个
+         *
+         * 第一个是代表 * 代表1个值 第二个是* 代表多个值 第三个 代表 * 代表0个值
          */
         return digui(str,strStart+1,pattern,patternStart+2) || digui(str,strStart+1,pattern,patternStart) || digui(str,strStart,pattern,patternStart+2);
       }else{
         /**
-         * 匹配不上的时候
+         * 匹配不上的时候 此时 * 代表0
          */
         return digui(str,strStart,pattern,patternStart+2);
       }
