@@ -55,7 +55,7 @@ public class day88 {
             nums1[p--]=nums1[p1]>nums2[p2]?nums1[p1--]:nums2[p2--];
         }
         /**
-         * 这里 肯定是  如果 nums2有剩余的话 那肯定就是都比nums1中的大,吧nums2 都复制到nums1 的前面去
+         * 这里 肯定是  如果 nums2有剩余的话 那肯定就是都比nums1中的小,吧nums2 都复制到nums1 的前面去
          */
         System.arraycopy(nums2,0,nums1,0,p2+1);
     }

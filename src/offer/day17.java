@@ -3,7 +3,7 @@ package offer;
 /**
  * @author: create by ys
  * @version: v1.0
- * @description: offer
+ * @description: 输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。
  * @date:2020/2/16
  */
 public class day17 {

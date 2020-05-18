@@ -66,13 +66,13 @@ public class day34 {
     int nextCount=1;
     while (queue.size()!=0){
 
-      queue.poll();
+      TreeNode tmq=queue.poll();
       count++;
-      if(root.left!=null){
-        queue.add(root.left);
+      if(tmq.left!=null){
+        queue.add(tmq.left);
       }
-      if(root.right!=null){
-        queue.add(root.right);
+      if(tmq.right!=null){
+        queue.add(tmq.right);
       }
       if(count==nextCount){
         /**

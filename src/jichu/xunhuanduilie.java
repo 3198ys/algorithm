@@ -15,7 +15,7 @@ public class xunhuanduilie {
     }
 
     public boolean isEmpty(){
-        LinkedList
+
         if(front==rear){
             return true;
         }else{
