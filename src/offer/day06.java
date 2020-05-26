@@ -69,4 +69,41 @@ public class day06 {
     }
     return -1;
   }
+
+
+  public int minNumberInRotateArrayV3(int[] array){
+
+    int left=0;
+    int right=array.length-1;
+    int mid=0;
+    while (array[left]>=array[right]){
+      if(right-left==1){
+        mid=right;
+        break;
+      }
+
+      mid=(left+right)/2;
+      if(array[left] == array[right] && array[right] == array[left]){
+        return getNums(array,left,right);
+      }
+      if(array[mid]>=array[left]){
+        left=mid;
+      }
+      if(array[mid]<=array[right]){
+        right=mid;
+      }
+    }
+    return array[mid];
+  }
+
+  public int getNums(int[] array,int left,int right){
+    int tmq=array[left];
+    for(int i=left+1;i<right;++i){
+
+      if(tmq>array[i]){
+        tmq=array[i];
+      }
+    }
+    return tmq;
+  }
 }
