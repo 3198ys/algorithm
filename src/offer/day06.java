@@ -72,7 +72,6 @@ public class day06 {
 
 
   public int minNumberInRotateArrayV3(int[] array){
-
     int left=0;
     int right=array.length-1;
     int mid=0;
