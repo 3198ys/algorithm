@@ -1,6 +1,7 @@
 package offer;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * @author: create by ys
@@ -19,22 +20,31 @@ public class day63 {
     public static ArrayList<Integer> maxInWindows(int [] num, int size)
     {
 
-        ArrayList<Integer> list=new ArrayList<>();
-        if(size==0){
-            return list;
+        ArrayList<Integer> ret=new ArrayList<>();
+        if(num==null){
+            return ret;
         }
-        for(int i=0;i<num.length;i++){
-            int min=num[i];
-            for(int j=i;j<i+size && i+size<=num.length;j++){
-                if(num[j]>min){
-                    min=num[j];
-                }
-            }
-            if(i+size<=num.length){
-                list.add(min);
-            }
+        if(num.length<size || size<1){
+            return ret;
         }
-        return list;
+        LinkedList<Integer> list=new LinkedList<>();
+        for(int i=0;i<size-1;i++){
+            while (!list.isEmpty() && num[i]>num[list.getLast()]){
+                list.removeLast();
+            }
+            list.addLast(i);
+        }
+        for(int i=size-1;i<num.length;i++){
+         while (!list.isEmpty() && num[i]>num[list.getLast()]){
+             list.removeLast();
+         }
+         list.addLast(i);
+         if((i-list.getFirst())+1>size){
+             list.removeFirst();
+         }
+         ret.add(num[list.getFirst()]);
+        }
+        return ret;
     }
 
 }
