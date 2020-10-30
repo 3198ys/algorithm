@@ -1,21 +1,31 @@
 package arraydemo;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Collections;
 import java.util.List;
 
 public class test2 {
     public static void main(String[] args) {
-        ArrayList<peopple> list=new ArrayList<>();
-        // a b c d
-        list.add(new peopple("a",4,1));
-        list.add(new peopple("c",4,2));
-        list.add(new peopple("b",4,3));
-        list.add(new peopple("d",4,0));
+//        String s = Base64.getEncoder()
+//            .encodeToString(
+//                ("1" + "," + "hello")
+//                    .getBytes(StandardCharsets.UTF_8));
+//    System.out.println(s);
 
-        Collections.sort(list);
-        for(peopple p:list){
-            System.out.println(p.getName());
-        }
+        String s="http://test1-kids.youdao.com/wx/index.html#/coupon/index?userCouponId=%s";
+    System.out.println(String.format(s,"aa"));
+
+//        String  a=null;
+//    System.out.println(a);
+//    a=a+"$"+"bbbbb";
+//        String b="bbb";
+////    System.out.printlln(b);
+//        String[] split = a.split("\\$");
+//        for(String a1:split){
+//      System.out.println(a1);
+//        }
+
     }
 }
