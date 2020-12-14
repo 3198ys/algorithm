@@ -11,8 +11,12 @@ public class test3 {
 
   public static void main(String[] args) {
 
-    System.out.println(Integer.toBinaryString(1<<13));
-    System.out.println(Integer.toBinaryString(((1<<13)>>>1)&3));
-    System.out.println();
+    String aa="[9020728,9020726]";
+    String dd="9020728,9020726";
+
+    aa.replaceAll("\\[", "").replaceAll("\\]","");
+    dd=dd.replaceAll("\\[", "").replaceAll("\\]","");
+    System.out.println(aa);
+    System.out.println(dd);
   }
 }
