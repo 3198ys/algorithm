@@ -57,9 +57,34 @@ public class ques75 {
     sortColors(nums);
   }
 
+  /**
+   * 双指针
+   * @param nums
+   */
   public void sortColorsV2(int[] nums) {
 
-    sort(nums,0,nums.length-1);
-    System.out.println(Arrays.toString(nums));
+    int n=nums.length;
+    int p0=0,p1=0;
+    for(int i=0;i<n;i++){
+      if(nums[i]==1){
+        int tmq=nums[i];
+        nums[i]=nums[p1];
+        nums[p1]=tmq;
+        ++p1;
+      }else if(nums[i]==0){
+        int tmq=nums[i];
+        nums[i]=nums[p0];
+        nums[p0]=tmq;
+        //说明0 后面已经有1 了 前面的对0的交换 会把1 交出去 所以这个地方需要吧一拿回来
+        if(p0<p1){
+
+          tmq=nums[i];
+          nums[i]=nums[p1];
+          nums[p1]=tmq;
+        }
+        ++p0;
+        ++p1;
+      }
+    }
   }
 }
