@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。&#10; *     &lt;p&gt;此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/贪心算法/ques455.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/排序/ques75.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/排序/ques75.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,14 +209,7 @@
       <workItem from="1605789810510" duration="28000" />
       <workItem from="1607947009285" duration="6942000" />
       <workItem from="1608109090798" duration="6136000" />
-      <workItem from="1608206251316" duration="1543000" />
-    </task>
-    <task id="LOCAL-00005" summary="优先队列 有点问题">
-      <created>1578278902825</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1578278902825</updated>
+      <workItem from="1608206251316" duration="3157000" />
     </task>
     <task id="LOCAL-00006" summary="优先队列 有点问题">
       <created>1578482034500</created>
@@ -554,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608191271589</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。&#10; *     &lt;p&gt;此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。">
+      <created>1608260018501</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1608260018501</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -695,10 +695,10 @@
     </state>
     <state x="2229" y="370" width="1565" height="728" key="SettingsEditor/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1608206070777" />
     <state x="2229" y="370" key="SettingsEditor/0.25.1440.875/1440.25.2560.1415@1440.25.2560.1415" timestamp="1608206179475" />
-    <state x="2187" y="373" key="Vcs.Push.Dialog.v2" timestamp="1608191273002">
+    <state x="2187" y="373" key="Vcs.Push.Dialog.v2" timestamp="1608260021275">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state x="2187" y="373" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1608191273002" />
+    <state x="2187" y="373" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1608260021275" />
     <state x="2514" y="648" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607947019367">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
