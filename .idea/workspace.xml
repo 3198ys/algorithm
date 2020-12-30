@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="给定一个区间的集合，找到需要移除区间的最小数量，使剩余区间互不重叠。">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/贪心算法/ques452.java" afterDir="false" />
+    <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="在二维空间中有许多球形的气球。对于每个气球，提供的输入是水平方向上，气球直径的开始和结束坐标。由于它是水平的，所以纵坐标并不重要，因此只要知道开始和结束的横坐标就足够了。开始坐标总是小于结束坐标。&#10;&#10;一支弓箭可以沿着 x 轴从不同点完全垂直地射出。在坐标 x 处射出一支箭，若有一个气球的直径的开始和结束坐标为 xstart，xend， 且满足  xstart ≤ x ≤ xend，则该气球会被引爆。可以射出的弓箭的数量没有限制。 弓箭一旦被射出之后，可以无限地前进。我们想找到使得所有气球全部被引爆，所需的弓箭的最小数量。&#10;&#10;给你一个数组 points ，其中 points [i] = [xstart,xend] ，返回引爆所有气球所必须射出的最小弓箭数。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons&#10;著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/贪心算法/ques406.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -211,14 +211,7 @@
       <workItem from="1608109090798" duration="6136000" />
       <workItem from="1608206251316" duration="3796000" />
       <workItem from="1608556036541" duration="3293000" />
-      <workItem from="1609122780835" duration="3389000" />
-    </task>
-    <task id="LOCAL-00008" summary="day05">
-      <created>1579080962586</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1579080962586</updated>
+      <workItem from="1609122780835" duration="6212000" />
     </task>
     <task id="LOCAL-00009" summary="day07">
       <created>1579145413367</created>
@@ -556,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608706928711</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="在二维空间中有许多球形的气球。对于每个气球，提供的输入是水平方向上，气球直径的开始和结束坐标。由于它是水平的，所以纵坐标并不重要，因此只要知道开始和结束的横坐标就足够了。开始坐标总是小于结束坐标。&#10;&#10;一支弓箭可以沿着 x 轴从不同点完全垂直地射出。在坐标 x 处射出一支箭，若有一个气球的直径的开始和结束坐标为 xstart，xend， 且满足  xstart ≤ x ≤ xend，则该气球会被引爆。可以射出的弓箭的数量没有限制。 弓箭一旦被射出之后，可以无限地前进。我们想找到使得所有气球全部被引爆，所需的弓箭的最小数量。&#10;&#10;给你一个数组 points ，其中 points [i] = [xstart,xend] ，返回引爆所有气球所必须射出的最小弓箭数。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons&#10;著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。">
+      <created>1609212016303</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1609212016304</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +575,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="最近的算法" />
     <MESSAGE value="回溯法 双指针" />
     <MESSAGE value="通过count找到数组中出现次数最多的数字" />
     <MESSAGE value="堆排序 不需要&lt;=  最小n个数需要&lt;=  快排" />
@@ -600,80 +599,81 @@
     <MESSAGE value="给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。&#10; *     &lt;p&gt;此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。" />
     <MESSAGE value="假设你是一位很棒的家长，想要给你的孩子们一些小饼干。但是，每个孩子最多只能给一块饼干。&#10; *     &lt;p&gt;对每个孩子 i，都有一个胃口值 g[i]，这是能让孩子们满足胃口的饼干的最小尺寸；并且每块饼干 j，都有一个尺寸 s[j] 。如果 s[j] &gt;= g[i]，我们可以将这个饼干 j&#10; *     分配给孩子 i ，这个孩子会得到满足。你的目标是尽可能满足越多数量的孩子，并输出这个最大数值&#10; 贪心入门算法" />
     <MESSAGE value="给定一个区间的集合，找到需要移除区间的最小数量，使剩余区间互不重叠。" />
-    <option name="LAST_COMMIT_MESSAGE" value="给定一个区间的集合，找到需要移除区间的最小数量，使剩余区间互不重叠。" />
+    <MESSAGE value="在二维空间中有许多球形的气球。对于每个气球，提供的输入是水平方向上，气球直径的开始和结束坐标。由于它是水平的，所以纵坐标并不重要，因此只要知道开始和结束的横坐标就足够了。开始坐标总是小于结束坐标。&#10;&#10;一支弓箭可以沿着 x 轴从不同点完全垂直地射出。在坐标 x 处射出一支箭，若有一个气球的直径的开始和结束坐标为 xstart，xend， 且满足  xstart ≤ x ≤ xend，则该气球会被引爆。可以射出的弓箭的数量没有限制。 弓箭一旦被射出之后，可以无限地前进。我们想找到使得所有气球全部被引爆，所需的弓箭的最小数量。&#10;&#10;给你一个数组 points ，其中 points [i] = [xstart,xend] ，返回引爆所有气球所必须射出的最小弓箭数。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons&#10;著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。" />
+    <option name="LAST_COMMIT_MESSAGE" value="在二维空间中有许多球形的气球。对于每个气球，提供的输入是水平方向上，气球直径的开始和结束坐标。由于它是水平的，所以纵坐标并不重要，因此只要知道开始和结束的横坐标就足够了。开始坐标总是小于结束坐标。&#10;&#10;一支弓箭可以沿着 x 轴从不同点完全垂直地射出。在坐标 x 处射出一支箭，若有一个气球的直径的开始和结束坐标为 xstart，xend， 且满足  xstart ≤ x ≤ xend，则该气球会被引爆。可以射出的弓箭的数量没有限制。 弓箭一旦被射出之后，可以无限地前进。我们想找到使得所有气球全部被引爆，所需的弓箭的最小数量。&#10;&#10;给你一个数组 points ，其中 points [i] = [xstart,xend] ，返回引爆所有气球所必须射出的最小弓箭数。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons&#10;著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。" />
   </component>
   <component name="WindowStateProjectService">
     <state width="719" height="708" key="DebuggerActiveHint" timestamp="1609211877674">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state width="719" height="708" key="DebuggerActiveHint/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609211877674" />
-    <state width="2518" height="502" key="GridCell.Tab.0.bottom" timestamp="1609211866575">
+    <state width="2518" height="502" key="GridCell.Tab.0.bottom" timestamp="1609307720729">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609211866575" />
+    <state width="2518" height="502" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609307720729" />
     <state width="2518" height="502" key="GridCell.Tab.0.bottom/0.25.1440.875/1440.25.2560.1415@1440.25.2560.1415" timestamp="1608206203795" />
     <state width="2518" height="407" key="GridCell.Tab.0.bottom/4000.0.1920.1080/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789720116" />
     <state width="2518" height="520" key="GridCell.Tab.0.bottom/4000.23.1920.1057/0.23.1440.797/1440.23.2560.1417@1440.23.2560.1417" timestamp="1603764489073" />
     <state width="2518" height="508" key="GridCell.Tab.0.bottom/4000.25.1920.1055/0.25.1440.797/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789423390" />
     <state width="1398" height="407" key="GridCell.Tab.0.bottom/4000.25.1920.1055/0.25.1440.797/1440.25.2560.1415@1440.25.2560.1415" timestamp="1605789732759" />
-    <state width="2518" height="502" key="GridCell.Tab.0.center" timestamp="1609211866572">
+    <state width="2518" height="502" key="GridCell.Tab.0.center" timestamp="1609307720725">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609211866572" />
+    <state width="2518" height="502" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609307720725" />
     <state width="2518" height="502" key="GridCell.Tab.0.center/0.25.1440.875/1440.25.2560.1415@1440.25.2560.1415" timestamp="1608206203794" />
     <state width="2518" height="407" key="GridCell.Tab.0.center/4000.0.1920.1080/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789720111" />
     <state width="2518" height="520" key="GridCell.Tab.0.center/4000.23.1920.1057/0.23.1440.797/1440.23.2560.1417@1440.23.2560.1417" timestamp="1603764489070" />
     <state width="2518" height="508" key="GridCell.Tab.0.center/4000.25.1920.1055/0.25.1440.797/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789423387" />
     <state width="1398" height="407" key="GridCell.Tab.0.center/4000.25.1920.1055/0.25.1440.797/1440.25.2560.1415@1440.25.2560.1415" timestamp="1605789732758" />
-    <state width="2518" height="502" key="GridCell.Tab.0.left" timestamp="1609211866570">
+    <state width="2518" height="502" key="GridCell.Tab.0.left" timestamp="1609307720721">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609211866570" />
+    <state width="2518" height="502" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609307720721" />
     <state width="2518" height="502" key="GridCell.Tab.0.left/0.25.1440.875/1440.25.2560.1415@1440.25.2560.1415" timestamp="1608206203793" />
     <state width="2518" height="407" key="GridCell.Tab.0.left/4000.0.1920.1080/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789720107" />
     <state width="2518" height="520" key="GridCell.Tab.0.left/4000.23.1920.1057/0.23.1440.797/1440.23.2560.1417@1440.23.2560.1417" timestamp="1603764489069" />
     <state width="2518" height="508" key="GridCell.Tab.0.left/4000.25.1920.1055/0.25.1440.797/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789423383" />
     <state width="1398" height="407" key="GridCell.Tab.0.left/4000.25.1920.1055/0.25.1440.797/1440.25.2560.1415@1440.25.2560.1415" timestamp="1605789732758" />
-    <state width="2518" height="502" key="GridCell.Tab.0.right" timestamp="1609211866574">
+    <state width="2518" height="502" key="GridCell.Tab.0.right" timestamp="1609307720726">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609211866574" />
+    <state width="2518" height="502" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609307720726" />
     <state width="2518" height="502" key="GridCell.Tab.0.right/0.25.1440.875/1440.25.2560.1415@1440.25.2560.1415" timestamp="1608206203795" />
     <state width="2518" height="407" key="GridCell.Tab.0.right/4000.0.1920.1080/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789720114" />
     <state width="2518" height="520" key="GridCell.Tab.0.right/4000.23.1920.1057/0.23.1440.797/1440.23.2560.1417@1440.23.2560.1417" timestamp="1603764489072" />
     <state width="2518" height="508" key="GridCell.Tab.0.right/4000.25.1920.1055/0.25.1440.797/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789423389" />
     <state width="1398" height="407" key="GridCell.Tab.0.right/4000.25.1920.1055/0.25.1440.797/1440.25.2560.1415@1440.25.2560.1415" timestamp="1605789732759" />
-    <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1609211866769">
+    <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1609307720735">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609211866769" />
+    <state width="2518" height="502" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609307720735" />
     <state width="2518" height="502" key="GridCell.Tab.1.bottom/0.25.1440.875/1440.25.2560.1415@1440.25.2560.1415" timestamp="1608206203799" />
     <state width="2518" height="508" key="GridCell.Tab.1.bottom/4000.0.1920.1080/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789544515" />
     <state width="2518" height="520" key="GridCell.Tab.1.bottom/4000.23.1920.1057/0.23.1440.797/1440.23.2560.1417@1440.23.2560.1417" timestamp="1603764489077" />
     <state width="2518" height="508" key="GridCell.Tab.1.bottom/4000.25.1920.1055/0.25.1440.797/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789423623" />
     <state width="2518" height="508" key="GridCell.Tab.1.bottom/4000.25.1920.1055/0.25.1440.797/1440.25.2560.1415@1440.25.2560.1415" timestamp="1605789732750" />
-    <state width="2518" height="502" key="GridCell.Tab.1.center" timestamp="1609211866764">
+    <state width="2518" height="502" key="GridCell.Tab.1.center" timestamp="1609307720730">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609211866764" />
+    <state width="2518" height="502" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609307720730" />
     <state width="2518" height="502" key="GridCell.Tab.1.center/0.25.1440.875/1440.25.2560.1415@1440.25.2560.1415" timestamp="1608206203798" />
     <state width="2518" height="508" key="GridCell.Tab.1.center/4000.0.1920.1080/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789544512" />
     <state width="2518" height="520" key="GridCell.Tab.1.center/4000.23.1920.1057/0.23.1440.797/1440.23.2560.1417@1440.23.2560.1417" timestamp="1603764489075" />
     <state width="2518" height="508" key="GridCell.Tab.1.center/4000.25.1920.1055/0.25.1440.797/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789423621" />
     <state width="2518" height="508" key="GridCell.Tab.1.center/4000.25.1920.1055/0.25.1440.797/1440.25.2560.1415@1440.25.2560.1415" timestamp="1605789732750" />
-    <state width="2518" height="502" key="GridCell.Tab.1.left" timestamp="1609211866761">
+    <state width="2518" height="502" key="GridCell.Tab.1.left" timestamp="1609307720730">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609211866761" />
+    <state width="2518" height="502" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609307720730" />
     <state width="2518" height="502" key="GridCell.Tab.1.left/0.25.1440.875/1440.25.2560.1415@1440.25.2560.1415" timestamp="1608206203796" />
     <state width="2518" height="508" key="GridCell.Tab.1.left/4000.0.1920.1080/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789544511" />
     <state width="2518" height="520" key="GridCell.Tab.1.left/4000.23.1920.1057/0.23.1440.797/1440.23.2560.1417@1440.23.2560.1417" timestamp="1603764489074" />
     <state width="2518" height="508" key="GridCell.Tab.1.left/4000.25.1920.1055/0.25.1440.797/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789423616" />
     <state width="2518" height="508" key="GridCell.Tab.1.left/4000.25.1920.1055/0.25.1440.797/1440.25.2560.1415@1440.25.2560.1415" timestamp="1605789732749" />
-    <state width="2518" height="502" key="GridCell.Tab.1.right" timestamp="1609211866768">
+    <state width="2518" height="502" key="GridCell.Tab.1.right" timestamp="1609307720731">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609211866768" />
+    <state width="2518" height="502" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609307720731" />
     <state width="2518" height="502" key="GridCell.Tab.1.right/0.25.1440.875/1440.25.2560.1415@1440.25.2560.1415" timestamp="1608206203798" />
     <state width="2518" height="508" key="GridCell.Tab.1.right/4000.0.1920.1080/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1605789544513" />
     <state width="2518" height="520" key="GridCell.Tab.1.right/4000.23.1920.1057/0.23.1440.797/1440.23.2560.1417@1440.23.2560.1417" timestamp="1603764489076" />
@@ -684,10 +684,10 @@
     </state>
     <state x="2229" y="370" width="1565" height="728" key="SettingsEditor/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1608206070777" />
     <state x="2229" y="370" key="SettingsEditor/0.25.1440.875/1440.25.2560.1415@1440.25.2560.1415" timestamp="1608206179475" />
-    <state x="2187" y="373" key="Vcs.Push.Dialog.v2" timestamp="1608706930233">
+    <state x="2187" y="373" key="Vcs.Push.Dialog.v2" timestamp="1609212018232">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state x="2187" y="373" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1608706930233" />
+    <state x="2187" y="373" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609212018232" />
     <state x="2514" y="648" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607947019367">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
@@ -845,22 +845,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/贪心算法/ques452.java</url>
-          <line>22</line>
+          <line>23</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/贪心算法/ques452.java</url>
-          <line>23</line>
+          <line>24</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/贪心算法/ques452.java</url>
-          <line>34</line>
+          <line>35</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/贪心算法/ques452.java</url>
-          <line>19</line>
+          <line>20</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
