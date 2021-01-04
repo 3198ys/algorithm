@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="在二维空间中有许多球形的气球。对于每个气球，提供的输入是水平方向上，气球直径的开始和结束坐标。由于它是水平的，所以纵坐标并不重要，因此只要知道开始和结束的横坐标就足够了。开始坐标总是小于结束坐标。&#10;&#10;一支弓箭可以沿着 x 轴从不同点完全垂直地射出。在坐标 x 处射出一支箭，若有一个气球的直径的开始和结束坐标为 xstart，xend， 且满足  xstart ≤ x ≤ xend，则该气球会被引爆。可以射出的弓箭的数量没有限制。 弓箭一旦被射出之后，可以无限地前进。我们想找到使得所有气球全部被引爆，所需的弓箭的最小数量。&#10;&#10;给你一个数组 points ，其中 points [i] = [xstart,xend] ，返回引爆所有气球所必须射出的最小弓箭数。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons&#10;著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/贪心算法/ques406.java" afterDir="false" />
+    <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="根据身高和序号重组队列">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/贪心算法/ques121.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +75,20 @@
       <recent name="leetcode" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ques452">
+  <component name="RunManager" selected="Application.ques121">
+    <configuration name="ques121" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.贪心算法.ques121" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.贪心算法.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ques347" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.排序.ques347" />
       <module name="arithmetic" />
@@ -128,26 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test3 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jichu.test3" />
-      <module name="arithmetic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jichu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ques121" />
         <item itemvalue="Application.ques452" />
         <item itemvalue="Application.ques75" />
         <item itemvalue="Application.ques451" />
         <item itemvalue="Application.ques347" />
-        <item itemvalue="Application.test3 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -211,14 +211,7 @@
       <workItem from="1608109090798" duration="6136000" />
       <workItem from="1608206251316" duration="3796000" />
       <workItem from="1608556036541" duration="3293000" />
-      <workItem from="1609122780835" duration="6212000" />
-    </task>
-    <task id="LOCAL-00009" summary="day07">
-      <created>1579145413367</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1579145413367</updated>
+      <workItem from="1609122780835" duration="6808000" />
     </task>
     <task id="LOCAL-00010" summary="day07">
       <created>1579162635108</created>
@@ -556,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609212016304</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="根据身高和序号重组队列">
+      <created>1609309929725</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1609309929726</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +575,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="回溯法 双指针" />
     <MESSAGE value="通过count找到数组中出现次数最多的数字" />
     <MESSAGE value="堆排序 不需要&lt;=  最小n个数需要&lt;=  快排" />
     <MESSAGE value="丑树 使用三个队列来完成" />
@@ -600,7 +599,8 @@
     <MESSAGE value="假设你是一位很棒的家长，想要给你的孩子们一些小饼干。但是，每个孩子最多只能给一块饼干。&#10; *     &lt;p&gt;对每个孩子 i，都有一个胃口值 g[i]，这是能让孩子们满足胃口的饼干的最小尺寸；并且每块饼干 j，都有一个尺寸 s[j] 。如果 s[j] &gt;= g[i]，我们可以将这个饼干 j&#10; *     分配给孩子 i ，这个孩子会得到满足。你的目标是尽可能满足越多数量的孩子，并输出这个最大数值&#10; 贪心入门算法" />
     <MESSAGE value="给定一个区间的集合，找到需要移除区间的最小数量，使剩余区间互不重叠。" />
     <MESSAGE value="在二维空间中有许多球形的气球。对于每个气球，提供的输入是水平方向上，气球直径的开始和结束坐标。由于它是水平的，所以纵坐标并不重要，因此只要知道开始和结束的横坐标就足够了。开始坐标总是小于结束坐标。&#10;&#10;一支弓箭可以沿着 x 轴从不同点完全垂直地射出。在坐标 x 处射出一支箭，若有一个气球的直径的开始和结束坐标为 xstart，xend， 且满足  xstart ≤ x ≤ xend，则该气球会被引爆。可以射出的弓箭的数量没有限制。 弓箭一旦被射出之后，可以无限地前进。我们想找到使得所有气球全部被引爆，所需的弓箭的最小数量。&#10;&#10;给你一个数组 points ，其中 points [i] = [xstart,xend] ，返回引爆所有气球所必须射出的最小弓箭数。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons&#10;著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。" />
-    <option name="LAST_COMMIT_MESSAGE" value="在二维空间中有许多球形的气球。对于每个气球，提供的输入是水平方向上，气球直径的开始和结束坐标。由于它是水平的，所以纵坐标并不重要，因此只要知道开始和结束的横坐标就足够了。开始坐标总是小于结束坐标。&#10;&#10;一支弓箭可以沿着 x 轴从不同点完全垂直地射出。在坐标 x 处射出一支箭，若有一个气球的直径的开始和结束坐标为 xstart，xend， 且满足  xstart ≤ x ≤ xend，则该气球会被引爆。可以射出的弓箭的数量没有限制。 弓箭一旦被射出之后，可以无限地前进。我们想找到使得所有气球全部被引爆，所需的弓箭的最小数量。&#10;&#10;给你一个数组 points ，其中 points [i] = [xstart,xend] ，返回引爆所有气球所必须射出的最小弓箭数。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons&#10;著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。" />
+    <MESSAGE value="根据身高和序号重组队列" />
+    <option name="LAST_COMMIT_MESSAGE" value="根据身高和序号重组队列" />
   </component>
   <component name="WindowStateProjectService">
     <state width="719" height="708" key="DebuggerActiveHint" timestamp="1609211877674">
@@ -684,10 +684,10 @@
     </state>
     <state x="2229" y="370" width="1565" height="728" key="SettingsEditor/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1608206070777" />
     <state x="2229" y="370" key="SettingsEditor/0.25.1440.875/1440.25.2560.1415@1440.25.2560.1415" timestamp="1608206179475" />
-    <state x="2187" y="373" key="Vcs.Push.Dialog.v2" timestamp="1609212018232">
+    <state x="2187" y="373" key="Vcs.Push.Dialog.v2" timestamp="1609309930881">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state x="2187" y="373" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609212018232" />
+    <state x="2187" y="373" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1609309930881" />
     <state x="2514" y="648" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607947019367">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
