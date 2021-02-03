@@ -11,12 +11,14 @@ public class test3 {
 
   public static void main(String[] args) {
 
-    String aa="[9020728,9020726]";
-    String dd="9020728,9020726";
-
-    aa.replaceAll("\\[", "").replaceAll("\\]","");
-    dd=dd.replaceAll("\\[", "").replaceAll("\\]","");
-    System.out.println(aa);
-    System.out.println(dd);
+    List<String> aa=new ArrayList<>();
+    aa.add("aaaa");
+    aa.add("aaaa");
+    aa.add("aaaa");
+    aa.add("aaaa");
+    List<String> strings = aa.subList(0, aa.size());
+    for(String c:strings){
+      System.out.println(c);
+    }
   }
 }
