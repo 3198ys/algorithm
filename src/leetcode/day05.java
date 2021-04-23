@@ -2,6 +2,7 @@ package leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -134,5 +135,47 @@ public class day05 {
       return sum;
     }
     return -1;
+  }
+
+  public static void main(String[] args) {
+     int[] a=new int[]{1,2,3,4,5,6};
+    List<List<Integer>> sqrt = sqrt(a);
+    for(List<Integer> aq:sqrt){
+      for(Integer cc:aq){
+        System.out.println(cc);
+      }
+    }
+  }
+  public static List<List<Integer>> sqrt (int[] nums) {
+    int len = nums.length;
+    Arrays.sort(nums);
+    List<List<Integer>> res = new LinkedList();
+    for (int i = 0; i < len; i++){
+      for (int j = len-1; j > i; j--){
+
+        List<Integer> tmp = new LinkedList();
+        int l = i, r = j;
+        int target = -(nums[i] + nums[j]);
+        while (l <= r){
+          int mid = l + (r-l)/2;
+          if (nums[mid] == target){
+            tmp.add(nums[i]);
+            tmp.add(nums[mid]);
+            tmp.add(nums[j]);
+          }
+          else if (nums[mid] > target){
+            l = mid+1;
+          }
+          else if (nums[mid] < target){
+            r = mid-1;
+          }
+        }
+
+        if (tmp.size() != 0)
+          res.add(tmp);
+      }
+    }
+    return res;
+    // write code here
   }
 }

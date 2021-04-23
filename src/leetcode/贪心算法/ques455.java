@@ -26,4 +26,25 @@ public class ques455 {
     }
     return grid;
   }
+
+
+  public int findContentChildrenV2(int[] g, int[] s) {
+
+    if(g==null || s==null){
+      return 0;
+    }
+    Arrays.sort(g);
+    Arrays.sort(s);
+
+    int grid=0;
+    int size=0;
+    while (grid<g.length && size<s.length){
+      if(g[grid]<=s[size]){
+        grid++;
+      }
+      size++;
+    }
+    return grid;
+
+  }
 }
