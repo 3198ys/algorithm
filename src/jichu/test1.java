@@ -1,5 +1,6 @@
 package jichu;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.text.ParseException;
@@ -27,9 +28,13 @@ public class test1 {
 //
 //    Date date = dateAddMinutes(parse1, 1390);
 //    System.out.println(sdf.format(date));
-   String a="urs";
-    String tmqId=a.length()>8?a.substring(a.length()-8,a.length()):a;
-    System.out.println(getMD5StrIgnoreException(a));
+//   String a="urs";
+//    String tmqId=a.length()>8?a.substring(a.length()-8,a.length()):a;
+//    System.out.println(getMD5StrIgnoreException(a));
+    BigDecimal bigDecimal = new BigDecimal("3.5");
+    BigDecimal bigDecimal1 = new BigDecimal("2.0");
+    BigDecimal divide = bigDecimal.divide(bigDecimal1, 0, BigDecimal.ROUND_HALF_UP);
+    System.out.println(divide);
   }
 
   public static int differentDaysByMillisecond(Date startTime, Date endTime) {
