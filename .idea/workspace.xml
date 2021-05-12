@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment=" 数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/day31.java" afterDir="false" />
+    <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="实现获取 下一个排列 的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/daday3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,14 +233,9 @@
       <workItem from="1620387410620" duration="71000" />
       <workItem from="1620438690676" duration="5082000" />
       <workItem from="1620647087475" duration="141000" />
-      <workItem from="1620698747327" duration="4658000" />
-    </task>
-    <task id="LOCAL-00022" summary="冒泡排序的另一种方式">
-      <created>1581433404601</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1581433404601</updated>
+      <workItem from="1620698747327" duration="4735000" />
+      <workItem from="1620733958917" duration="367000" />
+      <workItem from="1620786029331" duration="2399000" />
     </task>
     <task id="LOCAL-00023" summary="179 链表的翻转">
       <created>1581694299388</created>
@@ -578,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620445093398</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="实现获取 下一个排列 的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。">
+      <created>1620704180551</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1620704180551</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +599,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="双指针 两数平方之和" />
     <MESSAGE value="双指针 交换元音字母" />
     <MESSAGE value="双指针 合并数组" />
     <MESSAGE value="双指针 链表是否有环 使用双指针快慢指针来做" />
@@ -622,7 +623,8 @@
     <MESSAGE value="给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。答案可以按 任意顺序 返回。" />
     <MESSAGE value="给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。" />
     <MESSAGE value=" 数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。" />
+    <MESSAGE value="实现获取 下一个排列 的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现获取 下一个排列 的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2533" y="-100" key="#com.intellij.ide.util.MemberChooser" timestamp="1617247937784">
@@ -701,10 +703,10 @@
       <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
     <state x="2229" y="-184" key="SettingsEditor/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1620443605334" />
-    <state x="2187" y="-167" key="Vcs.Push.Dialog.v2" timestamp="1620445095119">
+    <state x="2187" y="-167" key="Vcs.Push.Dialog.v2" timestamp="1620704184004">
       <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
-    <state x="2187" y="-167" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1620445095119" />
+    <state x="2187" y="-167" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1620704184004" />
     <state x="2420" y="-66" width="1008" height="880" key="find.popup" timestamp="1619149417504">
       <screen x="1440" y="-540" width="2560" height="1440" />
     </state>
