@@ -12,8 +12,11 @@ import java.util.Map;
  */
 public class let01 {
   public static void main(String[] args) {
-    //
-    System.out.println(1621238464696L-1621238390849L);
+    // --1621240764345
+    // 2021-05-17 16:40:32,928 - com.youdao.kids.crm.service.offline.CrmIniService [Thread-43] INFO
+    // com.youdao.kids.crm.service.offline.CrmIniService iniLiveGoods:332 - iniLiveGoods
+    // end--------1621240832928
+    System.out.println(1621240832928L - 1621240764345L);
   }
 
   public int[] twoSum(int[] nums, int target) {
