@@ -9,6 +9,8 @@ package leetcode;
  * 就说明  这个  子字符串 是  回温了   所以  最终的条件就是 首位相同而且   j-i<3;则这个就是 回文
  *
  * 首先就是要初始化一个 dp[][] 的二维数组  之后  在对角线上的字符串 也就是只有一个字符的 字符串都是回文的字符串
+ *
+ * 1 2 3 4 5
  */
 public class day09 {
     public String longestPalindrome(String s) {
