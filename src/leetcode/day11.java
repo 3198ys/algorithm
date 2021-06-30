@@ -25,6 +25,17 @@ public class day11 {
 
   }
 
+  public ListNode aa(ListNode head){
+    if(head == null || head.next==null){
+      return head;
+    }
+    ListNode tmq=head.next;
+    ListNode resultNode=aa(head.next);
+    tmq.next=head;
+    head.next=null;
+    return resultNode;
+  }
+
   /**
    * 使用循环来做
    * @param head

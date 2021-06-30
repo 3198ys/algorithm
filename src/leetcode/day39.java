@@ -25,7 +25,10 @@ public class day39 {
     huisujianfa(list,candidates,target,tmqList,0);
     return list;
   }
-  public void huisujianfa(List<List<Integer>> list,int[] candidates, int target,List<Integer> tmqList,int start){
+
+
+
+  public static void huisujianfa(List<List<Integer>> list,int[] candidates, int target,List<Integer> tmqList,int start){
     if(target<0){return;}
     if(target == 0){
       list.add(new ArrayList<>(tmqList));
@@ -34,6 +37,18 @@ public class day39 {
     for(int i=start;i<candidates.length;i++){
       tmqList.add(candidates[i]);
       huisujianfa(list, candidates, target-candidates[i], tmqList, i);
+      tmqList.remove(tmqList.size()-1);
+    }
+  }
+  public static void huisujianfaV2(List<List<Integer>> list,int[] candidates, int target,List<Integer> tmqList){
+    if(target<0){return;}
+    if(target == 0){
+      list.add(new ArrayList<>(tmqList));
+      return;
+    }
+    for(int i=0;i<candidates.length;i++){
+      tmqList.add(candidates[i]);
+      huisujianfaV2(list, candidates, target-candidates[i], tmqList);
       tmqList.remove(tmqList.size()-1);
     }
   }
@@ -104,7 +119,7 @@ public class day39 {
     int [] con=new int[]{1,2,8};
     List<List<Integer>> list=new ArrayList<>();
     List<Integer> tmqList=new ArrayList<>();
-    huisu2(list,con,8,tmqList,0);
+    huisujianfaV2(list,con,8,tmqList);
     System.out.println("result:"+list.toString());
   }
 }

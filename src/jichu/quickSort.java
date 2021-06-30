@@ -123,6 +123,35 @@ public class quickSort {
     arr[j]=temp;
   }
 
+  public int partitionys(int[] array,int start,int end){
+    int target=array[start];
+    int left=start;
+    int rihgt=end;
+    while (left<rihgt){
+      while (left<rihgt && target<=array[rihgt]){
+        rihgt--;
+      }
+      while (left<rihgt && target>=array[left]){
+
+        left++;
+      }
+      if(left<rihgt){
+        int tmq=array[left];
+        array[left]=array[rihgt];
+        array[rihgt]=tmq;
+      }
+    }
+    array[start]=array[left];
+    array[left]=target;
+    return left;
+
+  }
+
+  public void sortys(int [] num,int left,int right){
+    int partition=partitionys(num,left,right);
+    sortys(num,left,partition-1);
+    sortys(num,partition+1,right);
+  }
   public static void sort(int [] arr,int start,int end){
     if(start>=end){
       return;

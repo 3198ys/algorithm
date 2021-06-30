@@ -35,7 +35,6 @@ public class day03 {
         return true;
     }
 
-
     public int huadongchuangkou(String s){
         HashSet<Character> set=new HashSet<>();
         char[] chars = s.toCharArray();

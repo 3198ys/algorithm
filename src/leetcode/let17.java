@@ -54,9 +54,7 @@ public class let17 {
    * @param str
    * @return
    */
-  public ArrayList<String> Permutation(String str) {
 
-  }
 
   public void shuzihuisu(List<String> result,String str,List<Character> tmq){
     if(tmq.size() ==str.length()){
