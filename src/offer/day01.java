@@ -27,4 +27,23 @@ public class day01 {
     return false;
   }
 
+  public boolean find2(int target,int [][] array){
+    if(array == null || array.length == 0 || array[0].length == 0){
+      return false;
+    }
+    //先找到每行的长度
+    int index = array[0].length-1;
+    for(int i=0;i<array.length;i++){
+      if(target >= array[0][0] && target <= array[0][index]){
+        //找到 这个target所处的行之后遍历这一行
+        for(int j=0;i<index;j++){
+          if(target == array[i][j]){
+            return true;
+          }
+        }
+      }
+    }
+    return false;
+  }
+
 }

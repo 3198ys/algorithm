@@ -28,4 +28,22 @@ public class day04 {
     list.add(listNode.val);
 
   }
+
+  //本道题主要就是哪一个递归把连表里的数据都放在数组里面然后返回 递归 一定你要有返回的条件才行 否则就会一直递归下去
+  public void digui2(ArrayList<Integer> list,ListNode listNode){
+    //递归一定要有返回值
+    if(listNode == null){
+      return;
+    }
+    digui2(list,listNode.next);
+    list.add(listNode.val);
+  }
+
+  public ArrayList<Integer> shoujilist(ArrayList<Integer> list,ListNode listNode){
+    if(listNode==null){
+      return list;
+    }
+    digui(list,listNode);
+    return list;
+  }
 }

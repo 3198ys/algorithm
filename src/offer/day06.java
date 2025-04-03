@@ -28,7 +28,7 @@ public class day06 {
     return 0;
   }
 
-  //别的方法 二分查找来做
+  //别的方法 二分查找来做 一般有顺序的数组都可以二分查找来做
   public int minNumberInRotateArray(int [] array) {
     if(array.length==0){
       return 0;
@@ -69,6 +69,24 @@ public class day06 {
     }
     return -1;
   }
+
+  int erfenv3(int a[],int key){
+    int low=0;
+    int high = a.length-1;
+    while (low<=high){
+      int middle = low+(high-low)/2;
+      if(a[middle]>key){
+        high=middle-1;
+      }else if(a[middle]<key){
+        low=middle+1;
+      }else{
+        return middle;
+      }
+      }
+    return -1;
+  }
+
+
 
 
   public int minNumberInRotateArrayV3(int[] array){

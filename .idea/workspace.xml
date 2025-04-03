@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,16 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="电话按键问题 正宗回溯法">
-      <change afterPath="$PROJECT_DIR$/src/jichu/test4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/let19.java" afterDir="false" />
+    <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="连表排序">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/jichu/quickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/jichu/quickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jichu/quickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jichu/quickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/day03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/day03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/day11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/day11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/day39.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/day39.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/let17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/let17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/day01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/day03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/day04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/day06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day06.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,31 +51,41 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="1WL2CvanGpQcysVzIZn0E55xvQU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578539591227" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/didi/learn/algorithm&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="leetcode" />
@@ -158,6 +167,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -262,6 +272,10 @@
       <workItem from="1624331706921" duration="5251000" />
       <workItem from="1624588744156" duration="3385000" />
       <workItem from="1625022702928" duration="9878000" />
+      <workItem from="1743316980451" duration="3325000" />
+      <workItem from="1743433425585" duration="2766000" />
+      <workItem from="1743555683689" duration="2446000" />
+      <workItem from="1743643132002" duration="2987000" />
     </task>
     <task id="LOCAL-00032" summary="丑树 使用三个队列来完成">
       <created>1583650043396</created>
@@ -606,11 +620,11 @@
       <option name="project" value="LOCAL" />
       <updated>1624415249418</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -622,11 +636,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="假设你是一位很棒的家长，想要给你的孩子们一些小饼干。但是，每个孩子最多只能给一块饼干。&#10; *     &lt;p&gt;对每个孩子 i，都有一个胃口值 g[i]，这是能让孩子们满足胃口的饼干的最小尺寸；并且每块饼干 j，都有一个尺寸 s[j] 。如果 s[j] &gt;= g[i]，我们可以将这个饼干 j&#10; *     分配给孩子 i ，这个孩子会得到满足。你的目标是尽可能满足越多数量的孩子，并输出这个最大数值&#10; 贪心入门算法" />
-    <MESSAGE value="给定一个区间的集合，找到需要移除区间的最小数量，使剩余区间互不重叠。" />
     <MESSAGE value="在二维空间中有许多球形的气球。对于每个气球，提供的输入是水平方向上，气球直径的开始和结束坐标。由于它是水平的，所以纵坐标并不重要，因此只要知道开始和结束的横坐标就足够了。开始坐标总是小于结束坐标。&#10;&#10;一支弓箭可以沿着 x 轴从不同点完全垂直地射出。在坐标 x 处射出一支箭，若有一个气球的直径的开始和结束坐标为 xstart，xend， 且满足  xstart ≤ x ≤ xend，则该气球会被引爆。可以射出的弓箭的数量没有限制。 弓箭一旦被射出之后，可以无限地前进。我们想找到使得所有气球全部被引爆，所需的弓箭的最小数量。&#10;&#10;给你一个数组 points ，其中 points [i] = [xstart,xend] ，返回引爆所有气球所必须射出的最小弓箭数。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons&#10;著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。" />
     <MESSAGE value="根据身高和序号重组队列" />
     <MESSAGE value="121. 买卖股票的最佳时机" />
@@ -650,87 +661,13 @@
     <MESSAGE value="水桶盛水典型双指针" />
     <MESSAGE value="你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有和为 0 且不重复的三元组。&#10; &#10; 注意：答案中不可以包含重复的三元组。" />
     <MESSAGE value="电话按键问题 正宗回溯法" />
-    <option name="LAST_COMMIT_MESSAGE" value="电话按键问题 正宗回溯法" />
+    <MESSAGE value="滑动窗口" />
+    <MESSAGE value="连表排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="连表排序" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="2533" y="-100" key="#com.intellij.ide.util.MemberChooser" timestamp="1617247937784">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state x="2533" y="-100" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1617247937784" />
-    <state width="2518" height="284" key="GridCell.Tab.0.bottom" timestamp="1625056559086">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1625056559086" />
-    <state width="1398" height="638" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1617259644131" />
-    <state width="2518" height="762" key="GridCell.Tab.0.bottom/0.25.1440.794/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161127785" />
-    <state width="2518" height="495" key="GridCell.Tab.0.bottom/0.25.1440.875/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161345883" />
-    <state width="2518" height="284" key="GridCell.Tab.0.center" timestamp="1625056559084">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="284" key="GridCell.Tab.0.center/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1625056559084" />
-    <state width="1398" height="638" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1617259644128" />
-    <state width="2518" height="762" key="GridCell.Tab.0.center/0.25.1440.794/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161127775" />
-    <state width="2518" height="495" key="GridCell.Tab.0.center/0.25.1440.875/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161345879" />
-    <state width="2518" height="284" key="GridCell.Tab.0.left" timestamp="1625056559082">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="284" key="GridCell.Tab.0.left/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1625056559082" />
-    <state width="1398" height="638" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1617259644126" />
-    <state width="2518" height="762" key="GridCell.Tab.0.left/0.25.1440.794/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161127736" />
-    <state width="2518" height="495" key="GridCell.Tab.0.left/0.25.1440.875/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161345877" />
-    <state width="2518" height="284" key="GridCell.Tab.0.right" timestamp="1625056559085">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="284" key="GridCell.Tab.0.right/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1625056559085" />
-    <state width="1398" height="638" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1617259644129" />
-    <state width="2518" height="762" key="GridCell.Tab.0.right/0.25.1440.794/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161127782" />
-    <state width="2518" height="495" key="GridCell.Tab.0.right/0.25.1440.875/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161345881" />
-    <state width="2518" height="489" key="GridCell.Tab.1.bottom" timestamp="1624276324439">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="489" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1624276324439" />
-    <state width="1398" height="638" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1617259644136" />
-    <state width="2518" height="495" key="GridCell.Tab.1.bottom/0.25.1440.875/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161345890" />
-    <state width="2518" height="489" key="GridCell.Tab.1.center" timestamp="1624276324437">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="489" key="GridCell.Tab.1.center/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1624276324437" />
-    <state width="1398" height="638" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1617259644134" />
-    <state width="2518" height="495" key="GridCell.Tab.1.center/0.25.1440.875/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161345887" />
-    <state width="2518" height="489" key="GridCell.Tab.1.left" timestamp="1624276324437">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="489" key="GridCell.Tab.1.left/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1624276324437" />
-    <state width="1398" height="638" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1617259644132" />
-    <state width="2518" height="495" key="GridCell.Tab.1.left/0.25.1440.875/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161345885" />
-    <state width="2518" height="489" key="GridCell.Tab.1.right" timestamp="1624276324438">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="489" key="GridCell.Tab.1.right/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1624276324438" />
-    <state width="1398" height="638" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1617259644135" />
-    <state width="2518" height="495" key="GridCell.Tab.1.right/0.25.1440.875/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1619161345888" />
-    <state x="2229" y="-184" key="SettingsEditor" timestamp="1620443605334">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state x="2229" y="-184" key="SettingsEditor/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1620443605334" />
-    <state width="849" height="445" key="SwitcherDM" timestamp="1624331789289">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state width="849" height="445" key="SwitcherDM/0.25.1440.875/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1624331789289" />
-    <state x="2187" y="-167" key="Vcs.Push.Dialog.v2" timestamp="1624415251231">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state x="2187" y="-167" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1624415251231" />
-    <state x="2420" y="-66" width="1008" height="880" key="find.popup" timestamp="1625032790234">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state x="2420" y="-66" width="1008" height="880" key="find.popup/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1625032790234" />
-    <state x="551" y="296" width="760" height="550" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1623219956369" />
-    <state x="2420" y="-66" width="1008" height="880" key="find.popup/0.25.1440.875/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1624331781071" />
-    <state x="2385" y="-188" width="670" height="676" key="search.everywhere.popup" timestamp="1622685253500">
-      <screen x="1440" y="-540" width="2560" height="1440" />
-    </state>
-    <state x="2385" y="-188" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-540.2560.1440@1440.-540.2560.1440" timestamp="1622685253500" />
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
