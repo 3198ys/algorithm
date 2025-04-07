@@ -18,4 +18,17 @@ public class day12 {
     }
     return count;
   }
+
+
+  public int number02(int target){
+    if(target == 0){
+      return 0;
+    }
+    int count =0;
+    while (target != 0){
+      count++;
+      target = target & (target-1);
+    }
+    return count;
+  }
 }

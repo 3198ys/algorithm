@@ -37,4 +37,21 @@ public class day09 {
     return result;
 
   }
+
+  /**
+   * 用动态规划来做，动态规划适用的 就是子路径最优解或者不同的结果都有相同的子问题 这些问题都适用动态规划， 动态规划 主要有三点要注意 1 数组的中的每一个值的状态，2 转移的动态方程 也就是 公式 3 边界值
+   * 这道题就是动态规划来做  数组中的每一个状态代表当前步骤的，动态转移方程 dp[i] = dp[i-1]+dp[i-2] 边界值就是dp[1] = 1 dp [2] =2
+   * @param target
+   * @return
+   */
+  public int dongtaiguihua(int target){
+
+    int [] dp=new int[target+1];
+    dp[1] =1;
+    dp[2] =2;
+    for(int i =3;i<target+1;i++){
+      dp[i]=dp[i-1]+dp[i-2];
+    }
+    return dp[target];
+  }
 }

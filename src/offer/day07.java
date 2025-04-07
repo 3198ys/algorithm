@@ -40,4 +40,15 @@ public class day07 {
     return nums[n];
   }
 
+  //实际上动态规划就是要先找到公式，动态规划一般都是通过底层向上去找，是有一定公式的
+  public int FibonacciV3(int n) {
+    if(n==0){
+      return 0;
+    }
+    if(n == 1 || n== 2){
+      return 1;
+    }
+    return FibonacciV2(n-1)+FibonacciV2(n-2);
+  }
+
 }

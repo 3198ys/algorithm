@@ -23,11 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="连表排序">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/day01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/day03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/day04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/day06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/day07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/day08.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/day09.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day09.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/day12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day12.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +274,7 @@
       <workItem from="1743316980451" duration="3325000" />
       <workItem from="1743433425585" duration="2766000" />
       <workItem from="1743555683689" duration="2446000" />
-      <workItem from="1743643132002" duration="2987000" />
+      <workItem from="1743643132002" duration="13054000" />
     </task>
     <task id="LOCAL-00032" summary="丑树 使用三个队列来完成">
       <created>1583650043396</created>
@@ -620,7 +619,7 @@
       <option name="project" value="LOCAL" />
       <updated>1624415249418</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
