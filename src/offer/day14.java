@@ -1,5 +1,8 @@
 package offer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author: create by ys
  * @version: v1.0
@@ -54,4 +57,43 @@ public class day14 {
     }
 
   }
-}
+
+
+  //最简单的方法 空间换时间 第一次循环把奇数找到放在一个数组中  第二次循环把偶数找到放在一个数组中 之后合并就行了
+  public List<Integer> reOrderArrayV2(int [] array){
+    List<Integer> list=new ArrayList<>();
+    List<Integer> list2=new ArrayList<>();
+    for(int a:array){
+      if((a&1) ==1){
+        list.add(a);
+      }
+      if((a&1) == 0){
+        list2.add(a);
+      }
+    }
+    List<Integer> list3=new ArrayList<>();
+    list3.addAll(list);
+    list3.addAll(list2);
+    return list3;
+
+  }
+  //如果不需要保证奇数和偶数的顺序 可以用快拍的思想来做
+  public int[] reorderArray3(int [] array){
+    int left = 0;
+    int right= array.length-1;
+    while (left<=right){
+      while (left<=right && (array[right] &1)==0){
+        right--;
+      }
+      while (left<=right && (array[left]&1)==1){
+        left++;
+      }
+      if(left<right){
+        int p=array[left];
+        array[left]=array[right];
+        array[right] = p;
+      }
+    }
+    return array;
+  }
+ }

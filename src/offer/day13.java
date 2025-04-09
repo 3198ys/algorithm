@@ -80,5 +80,30 @@ public class day13 {
       return 1/sum;
     }
   }
-  //本题是一个快速幂的问题 一般这种问题都是去求一个很大指数级 的值然后取余
+  //本题是一个快速幂的问题 一般这种问题都是去求一个很大指数级 的值然后取余 这个快速幂的思想就是 首先就是每次把指数/2 然后底数相乘 每次指数/2之后  底数就平方了,这是指数是偶数的情况
+  //如果是奇数的话 给base拆出来一个 base去和sum相乘，因为每次指数/2 奇数的话就会丢一个 取余数就是每一步都取余数就行了
+  public double powerv3(double base,int exponent){
+    double sum =1.0;
+    int cnunt = exponent;
+    if(exponent < 0){
+      //如果是负数 先变成正数 最后 1/sum 就行了
+      exponent = - exponent;
+    }
+    if(exponent == 0){
+      return 1;
+    }
+    while (exponent != 0){
+      if((exponent & 1) == 1){
+        //如果是奇数的话 拆出来一个base
+        sum = sum *base %1000;
+      }
+      base = base * base %1000;
+      exponent >>= 1; //向右移动两位 相当于/2
+    }
+
+    if(cnunt < 0){
+      sum = 1/sum;
+    }
+    return sum;
+  }
 }
