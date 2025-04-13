@@ -29,4 +29,24 @@ public class day15 {
     }
     return i<k?null:head;
   }
+
+  //这道题主要就是用双指针来做就行了 先让第一个指针先走 当他走到第k步的时候再让第二个指针也开始走，这样 第一个指针走完的时候，第二个指针正好倒数第k个，
+  //而且需要注意的就是就是需要把当前的连表给另外一个赋值方便指针走
+
+  public ListNode findKthodV2(ListNode listNode,int target){
+    if(listNode == null){
+      return null;
+    }
+    ListNode tmq = listNode; //第一个指针先走的
+    int i=0;//用于记录的步数用的
+    while (tmq!=null){
+      if(i>=target){
+        //如果第一个指针已经走过了目标步数 现在第二个指针就需要走了
+        listNode=listNode.next;
+      }
+      i++;
+      tmq=tmq.next;
+    }
+    return i<target?null:listNode;
+  }
 }

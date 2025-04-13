@@ -6,6 +6,10 @@ import java.util.HashSet;
  * 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
  */
 public class day03 {
+    public static void main(String[] args) {
+        int abcabcbb = huadongchuangkou("abcabcbb");
+        System.out.println(abcabcbb);
+    }
     public int lengthOfLongestSubstring(String s) {
 
         char[] chars = s.toCharArray();
@@ -35,7 +39,7 @@ public class day03 {
         return true;
     }
 
-    public int huadongchuangkou(String s){
+    public static int huadongchuangkou(String s){
         HashSet<Character> set=new HashSet<>();
         char[] chars = s.toCharArray();
         int i=0,max=0,j=0;

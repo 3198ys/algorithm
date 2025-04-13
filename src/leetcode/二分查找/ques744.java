@@ -35,4 +35,22 @@ public class ques744 {
     //加这个取模的原因就是  题目中的没找到循环取值的那个要求
     return letters[l%letters.length];
   }
+
+
+  //这道题 看着实际上找的是字符串 也可以找数字 反正只要是带顺序的数组就可以用erfenchazhao
+  public char nextGreatest(char[] letters,char target){
+    int left= 0;
+    int right = letters.length-1;
+    while (left<=right){
+      int mid= (left+right)/2;
+      if(letters[left]<=target){
+        left= mid+1;
+      }else{
+        right = mid-1;
+      }
+    }
+    //这样返回的原因就是 只要left最后一个left的字符串比target 小 +1之后就是大于他的最后的结果就是left == right的时候 left当前值 一定是大于target的 如果没有值的话 left最后就是和长度一样大了
+
+    return letters[left%letters.length];
+  }
 }

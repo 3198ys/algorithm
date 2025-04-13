@@ -24,9 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="连表排序">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/二分查找/ques69.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/二分查找/ques69.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/day13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/day14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/day03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/day03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/二分查找/ques744.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/二分查找/ques744.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/day15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/day16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/day16.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,29 +69,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/didi/learn/algorithm&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.day03.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/didi/learn/algorithm",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="leetcode" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.day39">
+  <component name="RunManager" selected="Application.day03">
+    <configuration name="day03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.day03" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="day39" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.day39" />
       <module name="arithmetic" />
@@ -130,19 +145,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jichu.test1" />
-      <module name="arithmetic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jichu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jichu.test4" />
       <module name="arithmetic" />
@@ -158,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.day03" />
         <item itemvalue="Application.day39" />
         <item itemvalue="Application.test4" />
         <item itemvalue="Application.let15" />
         <item itemvalue="Application.let01" />
-        <item itemvalue="Application.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +278,10 @@
       <workItem from="1743555683689" duration="2446000" />
       <workItem from="1743643132002" duration="13054000" />
       <workItem from="1744023201701" duration="5125000" />
-      <workItem from="1744161024349" duration="1030000" />
+      <workItem from="1744161024349" duration="1549000" />
+      <workItem from="1744334357318" duration="1032000" />
+      <workItem from="1744375932408" duration="48000" />
+      <workItem from="1744378581584" duration="7988000" />
     </task>
     <task id="LOCAL-00032" summary="丑树 使用三个队列来完成">
       <created>1583650043396</created>
@@ -621,7 +626,7 @@
       <option name="project" value="LOCAL" />
       <updated>1624415249418</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
