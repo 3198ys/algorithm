@@ -27,4 +27,22 @@ public class ques141 {
 
     return false;
   }
+
+
+  //判断是否有环 快慢指针就行了  快指针走两步 慢指针走一步 这样最后一定
+  public  boolean hasCycleV2(ListNode head){
+    if(head == null){
+      return false;
+    }
+    ListNode slow = head;
+    ListNode fast = head.next;
+    while(fast != null && fast.next !=null){
+      if(slow == fast){
+        return true;
+      }
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+    return false;
+  }
 }
