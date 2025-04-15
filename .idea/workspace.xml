@@ -23,23 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="连表排序">
+      <change afterPath="$PROJECT_DIR$/src/didi/IntensitySegments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/day03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/leetcode/day03.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/day11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/leetcode/day11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/day39.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/leetcode/day39.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/danlianbiaopaix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/danlianbiaopaix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day03.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day04.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day04.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day06.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day06.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day07.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day07.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day08.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day08.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day09.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day09.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/双指针/ques141.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/双指针/ques141.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/双指针/ques88.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/双指针/ques88.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/双指针/ques141.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/leetcode/双指针/ques141.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/双指针/ques88.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/leetcode/双指针/ques88.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day16.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,30 +70,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.day03.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/didi/learn/algorithm&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.IntensitySegments.executor": "Run",
+    "Application.concurrent.IntensitySegments.executor": "Run",
+    "Application.day03.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/didi/learn/algorithm",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="concurrent" />
       <recent name="leetcode" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.day03">
+  <component name="RunManager" selected="Application.IntensitySegments">
+    <configuration name="IntensitySegments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="didi.IntensitySegments" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="didi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="concurrent.IntensitySegments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrent.IntensitySegments" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="day03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.day03" />
       <module name="arithmetic" />
@@ -131,32 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="let01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.let01" />
-      <module name="arithmetic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="let15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.let15" />
-      <module name="arithmetic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jichu.test4" />
       <module name="arithmetic" />
@@ -172,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IntensitySegments" />
+        <item itemvalue="Application.concurrent.IntensitySegments" />
         <item itemvalue="Application.day03" />
         <item itemvalue="Application.day39" />
         <item itemvalue="Application.test4" />
-        <item itemvalue="Application.let15" />
-        <item itemvalue="Application.let01" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +286,8 @@
       <workItem from="1744334357318" duration="1032000" />
       <workItem from="1744375932408" duration="48000" />
       <workItem from="1744378581584" duration="10694000" />
-      <workItem from="1744679587495" duration="882000" />
+      <workItem from="1744679587495" duration="1812000" />
+      <workItem from="1744727015673" duration="5209000" />
     </task>
     <task id="LOCAL-00032" summary="丑树 使用三个队列来完成">
       <created>1583650043396</created>
@@ -639,7 +632,7 @@
       <option name="project" value="LOCAL" />
       <updated>1624415249418</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -860,6 +853,31 @@
           <url>file://$PROJECT_DIR$/src/leetcode/ques17.java</url>
           <line>52</line>
           <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/didi/IntensitySegments.java</url>
+          <line>155</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/didi/IntensitySegments.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/didi/IntensitySegments.java</url>
+          <line>180</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/didi/IntensitySegments.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/didi/IntensitySegments.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
