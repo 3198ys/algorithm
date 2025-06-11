@@ -23,12 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36662fb8-941b-4253-8ffb-0a6532fce425" name="Default Changelist" comment="连表排序">
-      <change afterPath="$PROJECT_DIR$/src/didi/IntensitySegments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/双指针/ques141.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/leetcode/双指针/ques141.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/双指针/ques88.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/leetcode/双指针/ques88.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/offer/day16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/offer/day16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/didi/day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/didi/day.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,12 +71,14 @@
     "Application.concurrent.IntensitySegments.executor": "Run",
     "Application.day03.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/didi/learn/algorithm",
+    "last_opened_file_path": "/Users/macbook/workspace/algorithm",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -288,6 +285,7 @@
       <workItem from="1744378581584" duration="10694000" />
       <workItem from="1744679587495" duration="1812000" />
       <workItem from="1744727015673" duration="5209000" />
+      <workItem from="1749516189770" duration="1576000" />
     </task>
     <task id="LOCAL-00032" summary="丑树 使用三个队列来完成">
       <created>1583650043396</created>
